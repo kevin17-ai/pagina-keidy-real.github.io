@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crují Platanito: rollitos, canoas de plátano, patacón desgranado y empanadas.">
+  <title>Crují Platanito | Linda y nutritiva</title>
+  <style>
+    :root {
+      --verde: #123f29;
+      --verde-claro: #eaf1e8;
+      --amarillo: #f2b92f;
+      --crema: #fffdf7;
+      --texto: #24372b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto); background: var(--crema); line-height: 1.6;
+    }
+    header {
+      background: var(--verde); color: white; padding: 18px 6%;
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+      flex-wrap: wrap;
+    }
+    .brand { font-weight: 900; font-size: 1.3rem; letter-spacing: 1px; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: var(--amarillo); }
+    .hero {
+      padding: 64px 6%; text-align: center;
+      background: radial-gradient(circle at top left, #ffe8a4, transparent 35%), var(--verde-claro);
+    }
+    .tag { color: var(--verde); font-weight: bold; text-transform: uppercase; letter-spacing: 3px; }
+    h1 { margin: 8px 0; color: var(--verde); font-size: clamp(2.7rem, 7vw, 5.3rem); line-height: 1; }
+    .slogan { font-size: clamp(1.25rem, 3vw, 2rem); font-style: italic; color: #3d674b; margin: 14px 0; }
+    .hero p { max-width: 720px; margin: 0 auto 24px; }
+    .button {
+      display: inline-block; background: var(--amarillo); color: var(--verde);
+      padding: 12px 24px; border-radius: 999px; font-weight: 800; text-decoration: none;
+    }
+    section { padding: 58px 6%; }
+    .section-title { text-align: center; color: var(--verde); font-size: clamp(1.8rem, 4vw, 2.7rem); margin: 0 0 12px; }
+    .section-intro { text-align: center; max-width: 760px; margin: 0 auto 32px; }
+    .menu {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px;
+      max-width: 1100px; margin: auto;
+    }
+    .card {
+      background: white; border: 1px solid #e4e8df; border-radius: 18px; padding: 24px;
+      box-shadow: 0 8px 24px rgba(18,63,41,.08); text-align: center;
+      transition: transform .2s ease;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .food-icon { font-size: 2.6rem; }
+    .card h3 { color: var(--verde); margin: 10px 0 4px; }
+    .price { color: var(--verde); font-weight: 900; font-size: 1.55rem; }
+    .description { background: var(--verde-claro); }
+    .description-box { max-width: 900px; margin: auto; background: white; border-left: 6px solid var(--amarillo); border-radius: 12px; padding: 26px; }
+    .details { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 24px; }
+    .detail { background: white; padding: 16px 22px; border-radius: 12px; font-weight: bold; }
+    .authors { text-align: center; }
+    .author-list { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .author { background: var(--verde-claro); color: var(--verde); padding: 12px 22px; border-radius: 999px; font-weight: bold; }
+    .poster { text-align: center; background: #fff; }
+    .poster img { width: min(100%, 650px); height: auto; border-radius: 16px; box-shadow: 0 10px 30px #123f2920; }
+    footer { background: var(--verde); color: white; text-align: center; padding: 26px 6%; }
+    footer strong { color: var(--amarillo); }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding-top: 46px; padding-bottom: 46px; }
+      section { padding: 42px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">🍌 CRUJÍ PLATANITO</div>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#descripcion">Descripción</a>
+      <a href="#autoras">Autoras</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="tag">Sabor que provoca</div>
+      <h1>CRUJÍ PLATANITO</h1>
+      <div class="slogan">¡Linda y nutritiva!</div>
+      <p>Una propuesta deliciosa que transforma el plátano y otros ingredientes en preparaciones ideales para compartir y disfrutar.</p>
+      <a class="button" href="#menu">Conoce nuestro menú</a>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Nuestro menú</h2>
+      <p class="section-intro">¡Escoge tu antojo favorito! Estos son los productos y precios de Crují Platanito.</p>
+      <div class="menu">
+        <article class="card">
+          <div class="food-icon" aria-hidden="true">🌯</div>
+          <h3>Rollitos</h3>
+          <p>Rollitos dorados y crujientes, rellenos de jamón y queso.</p>
+          <div class="price">$4.500</div>
+        </article>
+        <article class="card">
+          <div class="food-icon" aria-hidden="true">🍌</div>
+          <h3>Canoas de plátano</h3>
+          <p>Plátano preparado con una combinación cremosa de ingredientes y queso.</p>
+          <div class="price">$8.000</div>
+        </article>
+        <article class="card">
+          <div class="food-icon" aria-hidden="true">🍽️</div>
+          <h3>Patacón desgranado</h3>
+          <p>Patacón crocante acompañado de maíz y una mezcla cremosa.</p>
+          <div class="price">$9.000</div>
+        </article>
+        <article class="card">
+          <div class="food-icon" aria-hidden="true">🥟</div>
+          <h3>Empanadas</h3>
+          <p>Empanadas doradas con un relleno sabroso, perfectas para cualquier momento.</p>
+          <div class="price">$4.000</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="description" id="descripcion">
+      <h2 class="section-title">Descripción del emprendimiento</h2>
+      <div class="description-box">
+        <p><strong>Crují Platanito</strong> es una propuesta gastronómica que ofrece preparaciones deliciosas y llamativas, con el plátano como protagonista de algunas de sus recetas. Nuestro menú combina sabores, texturas y presentaciones para brindar una experiencia agradable a quienes buscan algo rico para comer.</p>
+        <p>Nos caracterizamos por presentar nuestros productos de manera atractiva, ofrecer precios visibles y atender a nuestros clientes con amabilidad. Queremos que cada preparación sea una oportunidad para disfrutar, compartir y apoyar una iniciativa emprendedora.</p>
+      </div>
+      <div class="details">
+        <div class="detail">📅 28 de octubre</div>
+        <div class="detail">🕗 8:00 a. m.</div>
+        <div class="detail">📍 Parque principal</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>CRUJÍ PLATANITO</strong><br>
+    ¡Ven y disfruta algo delicioso!<br>
+    <small>28 de octubre · 8:00 a. m. · Parque principal</small><br>
+    <small class="creators">Página creada por Ana María y Kairi Tatiana.</small>
+  </footer>
+</body>
+</html>
